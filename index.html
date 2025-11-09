@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCCopy</title>
+    <link rel="icon" href="/Assets/Images/icon.png">
+    <link rel="stylesheet" href="/Assets/Styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="/Assets/Scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="bg-red-300 w-[100vw] h-[10vh]">
+            <div class="bg-[#1ca4ff] w-[100vw] h-[10vh] flex items-center">
+                <div class="w-[7%] md:w-[3%]"></div>
+                <div class="w-[30%] text-white font-bold text-[18px] md:text-[22px] cursor-pointer" onclick="goTo('#')">DCCopy</div>
+                <div class="w-[7%] md:w-[3%]"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="abc" class="hidden">
+            <div class="w-[100vw] h-[90vh]">
+                <div class="w-[100vw] h-auto py-[10vh] px-[3vw]">
+                    <h1 class="text-4xl md:text-5xl font-bold text-[#001c2d] text-center">DCCopy<span class="max-md:hidden">, Make You're Self Happy!</span></h1>
+                    <div class="w-[100%] flex justify-center my-[10vh]">
+                        <input class="w-[80%] md:w-[55vw] bg-[#1ca4ff] border-none rounded-md text-white outline-none px-3 py-2 md:py-3" id="search" placeholder="How are you?">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="def" class="hidden">
+            <div class="w-[100vw] h-[90vh] flex justify-center">
+                <div>
+                    <div class="w-[100vw] md:h-[80vh] my-[5vh] md:flex md:justify-center md:items-center">
+
+                            <div class="w-[100%] md:w-[35%] md:h-[90%] flex justify-center">
+                                <div class="max-md:w-[55%] md:h-[80%] aspect-square">
+                                    <img class="w-full h-full object-contain" src="" alt="Subscribe Dyn Crazy" id="theimage">
+                                </div>
+                            </div>
+
+                            <div class="w-[5%] h-[90%] md:hidden"></div>
+
+                            <div class="w-[100%] md:w-[60%] md:h-[90%] max-md:p-[10vw]">
+                                <h2 class="text-3xl md:text-4xl font-bold text-[#001c2d] m-0" id="thetitle">Title</h2>
+                                <p class="text-[14px] md:text-[16px] text-[#001c2d] opacity-95 my-[26px]" id="thedescription">Description</p>
+                                <div class="bg-[#001c2d8f] text-white text-[14px] md:text-[16px] w-[100%] md:w-[80%] outline-none rounded-md overflow-x-auto overflow-y-hidden whitespace-nowrap p-4">
+                                    <div class="text-white"><span id="theurl">Url</span></div>
+                                </div>
+                                <button class="bg-[#1ca4ff] text-[12px] md:text-[16px] border-[#1ca4ff] border-[1px] my-[26px] mr-[7px] md:mr-[12px] p-2 px-4 md:px-5 rounded-md text-white text-center cursor-pointer outline-none" onclick="salinUrl()">Salin Url</button>
+                                <button class="bg-transparent text-[12px] md:text-[16px] border-[#001c2d] border-[1px] my-[26px] p-2 px-4 md:px-5 rounded-md text-[#001c2d] text-center cursor-pointer outline-none" id="thethanks">Ucap Terima Kasih</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ghi" class="hidden">
+            <div class="w-[100vw] my-[10vh] flex justify-center px-[7vw]">
+                <p class="text-center">ID/parameter yang kamu masukkan, tidak dapat ditemukan!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
